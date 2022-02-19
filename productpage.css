@@ -1,0 +1,31 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.primary-button {
+  width: 95%;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "side-bar side-bar cardexit"
+    "side-bar side-bar cardexit"
+    "side-bar side-bar cardexit";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+.side-bar {
+  grid-area: side-bar;
+}
+.product-grid {
+  grid-area: cardexit;
+}

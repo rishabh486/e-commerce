@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mycart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-content p {
+  margin-top: 1.3rem;
+}

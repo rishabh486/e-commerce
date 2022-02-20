@@ -91,7 +91,12 @@
   padding: 1rem;
 }
 
-/* card with text overlay */
+.card-body,
+.original-price,
+.discount-price,
+.price {
+  font-size: 2rem;
+}
 
 /* button component */
 

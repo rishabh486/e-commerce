@@ -1,8 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 30rem);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 .primary-button {
   width: 95%;
@@ -12,7 +16,7 @@
   height: 100vh;
   width: 100%;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "navbar navbar navbar"
     "side-bar side-bar cardexit"
@@ -22,9 +26,11 @@
 
 .navbar {
   grid-area: navbar;
+  width: 100%;
 }
 .side-bar {
   grid-area: side-bar;
+  height: 100vh;
 }
 .product-grid {
   grid-area: cardexit;

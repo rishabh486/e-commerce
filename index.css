@@ -205,36 +205,13 @@
   margin-bottom: 10rem;
 }
 .content .price,
+.card-body,
+.price,
 .original-price,
 .discount-price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
-/* .button{
-            display:inline-flex;
-            justify-content:flex-end;
-            flex-direction:column;
-             width:100%;
-            height:100%; 
-            padding:1rem;
-            color:black;
-            font-size:2rem;
-            box-sizing:border-box;
-        } */
-.content,
-.background {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.tag {
-  margin: 1rem;
-  grid-area: 1/-1;
-  background-color: orange;
-  align-self: start;
-  justify-self: end;
-  padding: 1rem;
-  border-radius: 5%;
-  font-size: 1.5rem;
-}
+
 .overlay-image {
   max-inline-size: 100%;
   block-size: 100%;

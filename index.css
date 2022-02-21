@@ -3,12 +3,16 @@
   box-sizing: border-box;
   --primary-color: #49a0eb;
   --secondary-color: #63edff;
+<<<<<<< HEAD
   --danger-color: red;
   --icon-badge-color: #209bab;
+=======
+>>>>>>> 5335fda (changes made according to reviews)
   --icon-button-color: lavenderblush;
   --icon-badge-number-bg: lightblue;
   --icon-badge-number: black;
   --icon-button: #333333;
+<<<<<<< HEAD
 }
 .wrapper {
   position: relative;
@@ -20,6 +24,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-grow: 1;
+=======
+>>>>>>> 5335fda (changes made according to reviews)
 }
 
 /* vertical card */
@@ -37,7 +43,6 @@
   flex-direction: row;
   width: 55rem;
   max-height: 31rem;
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .card-data {
@@ -50,15 +55,12 @@
   width: 20rem;
   height: auto;
   margin-right: 2rem;
-  margin-left: 0.5rem;
+  margin-left: 5px;
   border-radius: 5%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-/* .card-body{
-            font-size:2rem;
-            margin:0.5rem;
-        } */
+
 .card-title {
   font-size: 3rem;
   margin: 0.4rem;
@@ -73,12 +75,12 @@
   font-size: 2rem;
 }
 .btn-container-horizontal {
-  margin-left: -0.3rem;
-  margin: 0.5rem;
+  margin-left: -3px;
+  margin: 5px;
 }
 .card-content {
   font-size: 2rem;
-  margin-left: 0.8rem;
+  margin-left: 8px;
   margin-top: -1.5rem;
   margin-bottom: 1rem;
 }
@@ -93,11 +95,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* border-bottom: 0.1rem solid grey; */
 }
 .price-details h1 {
-  border-bottom: 0.1rem solid grey;
+  border-bottom: 1px solid grey;
   padding: 1rem;
   margin: 1rem;
 }
@@ -108,7 +108,7 @@
 .price-details p {
   margin: 1rem;
   font-size: 1.5rem;
-  margin-right: 0.5rem;
+  margin-right: 5px;
 }
 .button-container {
   width: 95%;
@@ -117,7 +117,7 @@
   align-items: center;
   margin: 1rem;
   font-size: 1.7rem;
-  border-bottom: 0.1rem solid grey;
+  border-bottom: 1px solid grey;
 }
 .pricing-amount-before-discount {
   display: flex;
@@ -125,10 +125,10 @@
   justify-content: space-between;
 }
 .pricing-amount-before-discount {
-  padding: 0.5rem;
+  padding: 5px;
 }
 .pricing-amount-before-discount p {
-  margin-right: 0.7rem;
+  margin-right: 7px;
 }
 
 /* card with exit button */
@@ -281,25 +281,33 @@
   font-weight: 800;
   font-size: 1.8rem;
   border: none;
+<<<<<<< HEAD
 
   border-radius: 1rem;
   border-radius: 1rem 1rem 1rem 1rem;
+=======
+  border-radius: 1rem;
+>>>>>>> 5335fda (changes made according to reviews)
   color: black;
   font-family: "roboto";
 }
 .primary-button {
   background-color: var(--primary-color);
+<<<<<<< HEAD
 }
 .secondary-button {
   background-color: var(--secondary-color);
 
   background-color: #49a0eb;
+=======
+>>>>>>> 5335fda (changes made according to reviews)
 }
 .secondary-button {
-  background-color: #63edff;
+  background-color: var(--secondary-color);
   color: black;
   font-family: "roboto";
 }
+<<<<<<< HEAD
 .danger-button {
   background-color: var(--danger-color);
   background-color: red;
@@ -362,6 +370,8 @@
   object-fit: contain;
   align-items: center;
 }
+=======
+>>>>>>> 5335fda (changes made according to reviews)
 
 /* badge */
 .notification {
@@ -537,7 +547,7 @@ a {
 .navbar {
   width: 100%;
   height: 8rem;
-  background-color: #49a0eb;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
 }
@@ -556,8 +566,6 @@ a {
   justify-content: space-evenly;
   margin-left: 0;
   flex: 60%;
-
-  /* align-items:center; */
 }
 .navbar .leftside .links {
   display: flex;

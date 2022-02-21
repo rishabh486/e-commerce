@@ -4,6 +4,7 @@
 
   --primary-color: #49a0eb;
   --secondary-color: #63edff;
+
   --icon-button-color: lavenderblush;
   --icon-badge-number-bg: lightblue;
   --icon-badge-number: black;
@@ -225,22 +226,13 @@
   font-weight: 500;
   font-size: 1.8rem;
   border: none;
-  border-radius: 1rem 1rem 1rem 1rem;
-
+  border-radius: 1rem;
   color: black;
   font-family: "roboto";
 }
 .primary-button {
-  background-color: #49a0eb;
+  background-color: var(--primary-color);
   width: 95%;
-}
-.opaque-button {
-  background-color: khaki;
-  width: 50%;
-  margin-bottom: -0.3rem;
-}
-.secondary-button {
-  background-color: khaki;
 }
 
 /* button component */

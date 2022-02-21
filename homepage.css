@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.arrival-layout {
+  display: grid;
+  grid-gap: 1rem;
+  grid-column-end: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: card;
+}
+.landing-page {
+  display: grid;
+
+  grid-gap: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar"
+    ". carousel carousel carousel carousel"
+    ". card card card card";
+}
+.navbar {
+  grid-area: navbar;
+}
+.side-bar {
+  grid-area: side-bar;
+}
+.carousel {
+  grid-area: carousel;
+}

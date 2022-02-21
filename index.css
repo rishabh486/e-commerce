@@ -3,29 +3,10 @@
   box-sizing: border-box;
   --primary-color: #49a0eb;
   --secondary-color: #63edff;
-<<<<<<< HEAD
-  --danger-color: red;
-  --icon-badge-color: #209bab;
-=======
->>>>>>> 5335fda (changes made according to reviews)
   --icon-button-color: lavenderblush;
   --icon-badge-number-bg: lightblue;
   --icon-badge-number: black;
   --icon-button: #333333;
-<<<<<<< HEAD
-}
-.wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 38rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-grow: 1;
-=======
->>>>>>> 5335fda (changes made according to reviews)
 }
 
 /* vertical card */
@@ -281,97 +262,21 @@
   font-weight: 800;
   font-size: 1.8rem;
   border: none;
-<<<<<<< HEAD
-
   border-radius: 1rem;
-  border-radius: 1rem 1rem 1rem 1rem;
-=======
-  border-radius: 1rem;
->>>>>>> 5335fda (changes made according to reviews)
   color: black;
   font-family: "roboto";
 }
 .primary-button {
   background-color: var(--primary-color);
-<<<<<<< HEAD
 }
 .secondary-button {
   background-color: var(--secondary-color);
-
-  background-color: #49a0eb;
-=======
->>>>>>> 5335fda (changes made according to reviews)
 }
 .secondary-button {
   background-color: var(--secondary-color);
   color: black;
   font-family: "roboto";
 }
-<<<<<<< HEAD
-.danger-button {
-  background-color: var(--danger-color);
-  background-color: red;
-  color: white;
-  font-family: "roboto";
-}
-.toggle-button {
-  position: relative;
-  width: 16rem;
-  height: 5rem;
-  border: none;
-  background-color: var(--secondary-color);
-  color: black;
-  font-family: "roboto";
-}
-.icon-badge-number {
-  position: absolute;
-  top: 0;
-  right: -2.1rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  background: var(--icon-badge-color);
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.toggle-badge {
-  width: 16rem;
-  height: 5rem;
-  position: relative;
-}
-.hide {
-  display: none;
-}
-.floating-action-button {
-  margin-top: 2rem;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--primary-color);
-  z-index: 1;
-}
-.floating-action-button-small {
-  margin-top: 2rem;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--primary-color);
-}
-.floating-action-button:hover,
-.floating-action-button-small:hover {
-  background-color: var(--secondary-color);
-}
-.floating-action-img {
-  width: 100%;
-  object-fit: contain;
-  align-items: center;
-}
-=======
->>>>>>> 5335fda (changes made according to reviews)
 
 /* badge */
 .notification {

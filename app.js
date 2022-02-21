@@ -1,11 +1,11 @@
 const track = document.querySelector(".carousel__track");
-const slides = Array.from(track.children);
+const slides = track && Array.from(track.children);
 const nextButton = document.querySelector(".carousel__button--right");
 const prevButton = document.querySelector(".carousel__button--left");
 const dotsNav = document.querySelector(".carousel__nav");
-const dots = Array.from(dotsNav.children);
+const dots = dotsNav && Array.from(dotsNav.children);
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth = slides && slides[0].getBoundingClientRect().width;
 
 // slides[0].style.left = 0 + "px";
 // slides[1].style.left = slideWidth * 1.5+ "px";
@@ -14,7 +14,7 @@ const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
 };
 
-slides.forEach(setSlidePosition);
+slides?.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
   track.style.transform = "translateX(-" + targetSlide.style.left + ")";
@@ -39,7 +39,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   }
 };
 
-prevButton.addEventListener("click", (e) => {
+prevButton?.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".current-slide");
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotsNav.querySelector(".current-slide");
@@ -50,7 +50,7 @@ prevButton.addEventListener("click", (e) => {
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 
-nextButton.addEventListener("click", (e) => {
+nextButton?.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".current-slide");
   const nextSlide = currentSlide.nextElementSibling;
   const currentDot = dotsNav.querySelector(".current-slide");
@@ -62,7 +62,7 @@ nextButton.addEventListener("click", (e) => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-dotsNav.addEventListener("click", (e) => {
+dotsNav?.addEventListener("click", (e) => {
   const targetDot = e.target.closest("button");
   if (!targetDot) return;
   const currentSlide = track.querySelector(".current-slide");
@@ -73,4 +73,15 @@ dotsNav.addEventListener("click", (e) => {
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
+});
+
+const cart = document.getElementById("cart-button");
+cart.addEventListener("click", function () {
+  window.location.href = "/cart.html";
+});
+
+const product = document.getElementById("product-page-card");
+if (product) product.style.cursor = "pointer";
+product?.addEventListener("click", function () {
+  window.location.href = "/productpage.html";
 });

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./cart.css" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class='brand'>
+            <h2>Puma</h2>
+        </div>
+
+        <div class="leftside">
+            <div class="links">
+                <a>Home</a>
+                <a>About</a>
+                <a>Login</a>
+                <a>Contact</a>
+                <a>
+                    <div class="notification">
+                        <div class="icon-badge">
+                            <button type="button" class="icon-button">
+                                <span>
+                                    <img class="icon-img" src="/Images/icons8-trolley-cart-64.png" />
+                                </span>
+                            </button>
+                            <span class="icon-badge-number">
+                                0
+                            </span>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="rightside">
+            <input type="text" placeholder="search.." />
+            <button>search</button>
+        </div>
+
+    </div>
+    <div class="mycart-grid">
+        <div class="card-horizontal card-margin">
+            <div class="img-container horizontal">
+                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                    class="card-img  img-horizontal" />
+            </div>
+            <div class="card-data">
+                <div class="card-header">
+                    <h3 class="card-title">Puma Court Royale</h3>
+                </div>
+                <div class="card-content">
+                    <p class="card-body">
+                        Court Royal 2 NN Lace-Up Sneakers
+                    </p>
+                    <span class="price">
+                        $50
+                    </span>
+                    <del class="original-price">
+                        $120
+                    </del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="btn-container-horizontal">
+                    <button class=" button-container-button primary-button">Buy Later</button>
+
+                </div>
+                <div class="btn-container-horizontal">
+                    <button class=" button-container-button secondary-button">Add To Whislist</button>
+                </div>
+            </div>
+        </div>
+        <div class="price-details">
+            <div class="price-heading">
+                <h1>
+                    Price Details
+                </h1>
+            </div>
+            <div class="pricing-column display-price">
+                <div class="pricing">
+                    <h3>Price(2 items)</h3>
+                    <p>$2000</p>
+                </div>
+                <div class="pricing">
+                    <h3>Discount</h3>
+                    <p>$2000</p>
+                </div>
+                <div class="pricing">
+                    <h3>Delivery</h3>
+                    <p>$2000</p>
+                </div>
+            </div>
+            <div class="pricing-amount-before-discount">
+                <h3>Total Amount</h3>
+                <p>$4000</p>
+            </div>
+            <div class="pricing-amount-before-discount">
+                <h3>Total amount to be payed</h3>
+                <p>$3000</p>
+            </div>
+            <div>
+                <button class="button-container-button primary-button">Proceed To pay</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,12 +1,19 @@
 :root {
   font-size: 62.5%;
   box-sizing: border-box;
+  --primary-color: #49a0eb;
+  --secondary-color: #63edff;
+  --danger-color: red;
+  --icon-badge-color: #209bab;
+  --icon-button-color: lavenderblush;
+  --icon-badge-number-bg: lightblue;
+  --icon-badge-number: black;
+  --icon-button: #333333;
 }
 .wrapper {
   position: relative;
   width: 100%;
   min-height: 38rem;
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -47,10 +54,8 @@
 .card-exit {
   display: flex;
   flex-direction: column;
-
   position: relative;
   width: 30rem;
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .exit-button {
@@ -78,9 +83,6 @@
 }
 .cart-button {
   padding: 0.8rem;
-  /* width:10rem;
-          height:3rem; */
-
   border: none;
   outline: none;
   background: black;
@@ -103,38 +105,34 @@
 .button-container-button {
   padding: 1rem 2rem;
   margin: 1rem;
-  /* margin-left:-0.3rem; */
   display: inline-block;
   width: 15rem;
   font-weight: 800;
   font-size: 1.8rem;
   border: none;
-  border-radius: 1rem 1rem 1rem 1rem;
-
+  border-radius: 1rem;
   color: black;
   font-family: "roboto";
 }
 .primary-button {
-  background-color: #49a0eb;
+  background-color: var(--primary-color);
 }
 .secondary-button {
-  background-color: #63edff;
+  background-color: var(--secondary-color);
   color: black;
   font-family: "roboto";
 }
 .danger-button {
-  background-color: red;
+  background-color: var(--danger-color);
   color: white;
   font-family: "roboto";
 }
 .toggle-button {
   position: relative;
-
   width: 16rem;
   height: 5rem;
   border: none;
-
-  background-color: #63edff;
+  background-color: var(--secondary-color);
   color: black;
   font-family: "roboto";
 }
@@ -144,7 +142,7 @@
   right: -2.1rem;
   width: 2.2rem;
   height: 2.2rem;
-  background: #209bab;
+  background: var(--icon-badge-color);
   color: black;
   display: flex;
   justify-content: center;
@@ -165,7 +163,7 @@
   height: 5rem;
   border-radius: 50%;
   border: none;
-  background-color: #49a0eb;
+  background-color: var(--primary-color);
   z-index: 1;
 }
 .floating-action-button-small {
@@ -174,11 +172,11 @@
   height: 4rem;
   border-radius: 50%;
   border: none;
-  background-color: #49a0eb;
+  background-color: var(--primary-color);
 }
 .floating-action-button:hover,
 .floating-action-button-small:hover {
-  background-color: #63edff;
+  background-color: var(--secondary-color);
 }
 .floating-action-img {
   width: 100%;
@@ -198,8 +196,8 @@
   align-items: center;
   width: 4rem;
   height: 4rem;
-  color: #333333;
-  background: lavenderblush;
+  color: var(--icon-button);
+  background: var(--icon-button-color);
   border: none;
   outline: none;
   border-radius: 50%;
@@ -213,8 +211,8 @@
   right: 0rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: lightblue;
-  color: black;
+  background: var(--icon-badge-number-bg);
+  color: var(--icon-badge-number);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,12 +234,12 @@
 .side-bar h2 {
   font-size: 1.7rem;
   margin: 1rem;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 1px solid black;
 }
 .side-bar-heading {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.1rem solid grey;
+  border-bottom: 1px solid grey;
 }
 
 #user-choice-radio {
@@ -346,7 +344,7 @@ a {
 .navbar .rightside button {
   height: 3.65rem;
   width: 5rem;
-  background-color: #63edff;
+  background-color: var(--secondary-color);
   border: none;
   cursor: pointer;
 }

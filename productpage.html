@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="stylesheet" href="./productpage.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class='brand'>
+                <h2>Puma</h2>
+            </div>
+
+            <div class="leftside">
+                <div class="links">
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Login</a>
+                    <a>Contact</a>
+                    <a>
+                        <div class="notification">
+                            <div class="icon-badge">
+                                <button type="button" class="icon-button">
+                                    <span>
+                                        <img class="icon-img" src="/Images/icons8-trolley-cart-64.png" />
+                                    </span>
+                                </button>
+                                <span class="icon-badge-number">
+                                    0
+                                </span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="rightside">
+                <input type="text" placeholder="search.." />
+                <button>search</button>
+            </div>
+
+        </div>
+
+        <div class="side-bar">
+            <div class="side-bar-heading">
+                <div>
+                    <h1>Filter</h1>
+                </div>
+                <div>
+                    <h1>Clear</h1>
+                </div>
+            </div>
+            <div class="price-heading">
+                <h2>Price</h2>
+                <div class="price-container">
+
+                    <input type="range" name="user-choice-range" id="user-choice-range" min="0" max="100" value="30">
+                    <option value="0" label="0%"></option>
+                </div>
+            </div>
+            <div class="category-heading">
+                <div>
+                    <h2>Category</h2>
+                </div>
+                <div class="category-container">
+                    <label for="user-choice-check">Men's Clothing</label>
+                    <input type="checkbox" name="user-choice-check" id="user-choice-check">
+                </div>
+                <div class="category-container">
+                    <label for="user-choice-check">Women Clothing</label>
+                    <input type="checkbox" name="user-choice-check" id="user-choice-check">
+                </div>
+                <div class="category-container">
+                    <label for="user-choice-check">Kids Clothing</label>
+                    <input type="checkbox" name="user-choice-check" id="user-choice-check">
+                </div>
+                <div class="category-container">
+                    <label for="user-choice-check">Newborn Clothing</label>
+                    <input type="checkbox" name="user-choice-check" id="user-choice-check">
+                </div>
+
+            </div>
+            <div class="rating-heading">
+                <div>
+                    <h2>Rating</h2>
+                </div>
+                <div class="rating-container">
+                    <label for="user-choice-radio">4stars & above</label>
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+                <div class="rating-container">
+                    <label for="user-choice-radio">3stars & above</label>
+
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+                <div class="rating-container">
+                    <label for="user-choice-radio">2stars & above</label>
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+                <div class="rating-container">
+                    <label for="user-choice-radio">1stars & above</label>
+
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+
+
+
+            </div>
+            <div class="sort-by-heading">
+                <div>
+                    <h2>Sort-by</h2>
+                </div>
+                <div class="sort-by-container">
+                    <label for="user-choice-radio">Price-Low to High</label>
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+                <div class="sort-by-container">
+                    <label for="user-choice-radio">Price-High to low</label>
+
+                    <input type="radio" name="user-choice-radio" id="user-choice-radio">
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+            <div class="card-exit ">
+                <div class="card-img">
+                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16045848/2021/12/13/c42ef067-9fbe-4077-a48c-fca6331796ab1639383810735-Nike-Court-Vision-Low-Mens-Shoes-7251639383810387-1.jpg"
+                        class="cross-image " />
+                </div>
+                <div class="card-content">
+                    <p class="card-body">Nike men's shoes</p>
+                    <span class="price">$50</span>
+                    <del class="original-price">$120</del>
+                    <b class="discount-price">24% OFF</b>
+                </div>
+                <div class="card-button">
+                    <button class="button-container-button primary-button cart">Add To Cart</button>
+                </div>
+                <button class="exit-button">
+                    <span>
+                        <img src="/Images/icons8-close-24.png" class="exit-button-cross" />
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
